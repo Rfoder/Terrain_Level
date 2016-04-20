@@ -1,3 +1,7 @@
 Base path: C:/Users/bfcat_000/Desktop/Editor/Data
-Pipe name: \\.\pipe\UnityShaderCompiler-1-8396
+Pipe name: \\.\pipe\UnityShaderCompiler-1-7716
 Cmd: getPlatforms
+Cmd: compileSnippet
+  api=4 type=0 insize=4366 outsize=4475 kw=DIRECTIONAL SHADOWS_OFF LIGHTMAP_OFF DIRLIGHTMAP_OFF VERTEXLIGHT_ON ok=1
+Cmd: compileSnippet
+  api=4 type=0 insize=6826 outsize=4979 kw=DIRECTIONAL SHADOWS_OFF LIGHTMAP_OFF DIRLIGHTMAP_OFF VERTEXLIGHT_ON ok=1
