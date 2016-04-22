@@ -15,7 +15,7 @@ public class Player : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider other) {
-		if (other.gameObject.tag ==  "WhiteSmoke") {
+		if (other.gameObject.tag ==  "flint") {
 
 			other.gameObject.SetActive(false);
 			count = count + 1;
