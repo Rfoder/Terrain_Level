@@ -29,8 +29,8 @@ public class Player : MonoBehaviour {
 		}
 		
 		if (other.gameObject.tag ==  "WhiteSmoke1") {
-			
-			other.gameObject.SetActive(true);
+			other.gameObject.particleSystem.Play(true);
+			//other.gameObject.SetActive(true);
 			count = count + 1;
 		}
 	}
