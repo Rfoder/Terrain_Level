@@ -14,12 +14,24 @@ public class Player : MonoBehaviour {
 		winText.text = "";
 	}
 
+	void OnAwake(){
+
+	}
+
 	void OnTriggerEnter(Collider other) {
 		if (other.gameObject.tag ==  "flint") {
 
 			other.gameObject.SetActive(false);
 			count = count + 1;
 			SetCountText();
+
+
+		}
+		
+		if (other.gameObject.tag ==  "WhiteSmoke1") {
+			
+			other.gameObject.SetActive(true);
+			count = count + 1;
 		}
 	}
 	void SetCountText(){

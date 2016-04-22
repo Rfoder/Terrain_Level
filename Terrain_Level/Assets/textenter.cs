@@ -17,7 +17,15 @@ public class textenter : MonoBehaviour {
 				
 				other.gameObject.SetActive(false);
 				count = count + 1;
+		}
+		
+				if (other.gameObject.tag ==  "WhiteSmoke1") {
+					
+					other.gameObject.SetActive(true);
+					count = count + 1;
+
 
 			}
 	}
-}	
+	
+}
