@@ -42,7 +42,7 @@ public class Player : MonoBehaviour {
 		if (other.gameObject.tag == "flint") {
 
 			other.gameObject.SetActive (false);
-			//count = count + 1;
+			count = count + 1;
 			SetCountText ();
 			
 
@@ -50,12 +50,14 @@ public class Player : MonoBehaviour {
 
 		
 		if (other.gameObject.tag == "WhiteSmoke1") {
+
 			other.gameObject.particleSystem.Play (true);
 
 			//other.gameObject.SetActive(true);
 
-			count = count + 1;
+			//count = count + 1;
 			SetCountText ();
+
 		}
 		if (other.gameObject.tag == "firelight") {
 			//other.gameObject.light.enabled = true;
@@ -75,22 +77,22 @@ public class Player : MonoBehaviour {
 			
 			//count = count + 1;
 		}
-		if (other.gameObject.tag == "endLight") {
+		//if (other.gameObject.tag == "endLight") {
 			//other.gameObject.light.enabled = true;
-			endLight.light.enabled = true;
+			//endLight.light.enabled = true;
 			
 			//count = count + 1;
-		}
+		//}
 		
 	}
 	 
 
 	void SetCountText(){
 
-		countText.text = "Count: " + count.ToString ();
+		countText.text = "Bonfire: " + count.ToString ();
 
 		if (count >= 3) {
-			//endLight.light.enabled = true;
+			endLight.light.enabled = true;
 			winText.text = "YOU WIN!";
 
 			//seconds -= Time.deltaTime;
