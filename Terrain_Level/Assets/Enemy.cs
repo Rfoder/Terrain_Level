@@ -4,6 +4,7 @@ using System.Collections;
 public class Enemy : MonoBehaviour {
 	public float moveSpeed;
 
+
 	public Transform[] patrolZones;
 
 	private int currentPoint;
@@ -26,5 +27,6 @@ public class Enemy : MonoBehaviour {
 		}
 
 		transform.position = Vector3.MoveTowards (transform.position, patrolZones [currentPoint].position, moveSpeed * Time.deltaTime);
+
 	}
 }

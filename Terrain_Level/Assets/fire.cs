@@ -2,12 +2,20 @@
 using System.Collections;
 
 public class fire : MonoBehaviour {
-
-
-//	void Awake() {
-//		this.gameObject.SetActive (false);
-
+//	public GameObject point_light;
+//	void Start()
+	//{
+//		point_light.active = false;
 //	}
+
+	//void OnTriggerEnter(Collider other){
+
+	//	if (other.gameObject.tag == "WhiteSmoke1") {
+	//		point_light.active = true;
+	//	}
+
+	//}
+		
 	
 
 }
