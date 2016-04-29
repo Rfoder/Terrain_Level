@@ -12,8 +12,11 @@ public class Player : MonoBehaviour {
 	public GUIText winText;
 	public float seconds = 3.0f;
 
+
 	private Vector3 reSpawn;
 	private int count;
+
+
 
 
 	void Start()
@@ -25,15 +28,9 @@ public class Player : MonoBehaviour {
 		reSpawn = transform.position;
 	}
 
-	void OnAwake(){
-	//	firelight.light.enabled = false;
-	}
 
-	//void OnCollisionEnter(Collision other){
-		//if (other.transform.tag =="endLight"){
-		//	transform.position = reSpawn;
-		//}
-	//}
+
+
 
 
 
@@ -47,7 +44,14 @@ public class Player : MonoBehaviour {
 			
 
 		}
+		if (other.gameObject.tag == "VolumeSteam") {
+			
+			other.gameObject.SetActive (false);
 
+
+			
+			
+		}
 		
 		if (other.gameObject.tag == "WhiteSmoke1") {
 
@@ -99,6 +103,7 @@ public class Player : MonoBehaviour {
 			//if(seconds <= 0.0f)		
 
 			transform.position = reSpawn;
+
 			}
 	
 		}
