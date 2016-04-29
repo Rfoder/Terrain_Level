@@ -19,6 +19,7 @@ public class Player : MonoBehaviour {
 
 
 
+
 	void Start()
 	{
 
@@ -26,12 +27,10 @@ public class Player : MonoBehaviour {
 		SetCountText ();
 		winText.text = "";
 		reSpawn = transform.position;
+
+
 	}
-
-
-
-
-
+	
 
 
 
@@ -107,9 +106,9 @@ public class Player : MonoBehaviour {
 			}
 	
 		}
-	void OnCollisionEnter(Collision other)
+	void OnTiggerEnter(Collision other)
 	{
-		if (other.transform.tag == "Enemy")
+		if (other.gameObject.tag == "Enemy")
 		{
 			Die();
 			
